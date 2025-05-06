@@ -15,8 +15,6 @@ namespace ConsoleHostedWebApp
         {
             using (var host = BuildHost(args))
             {
-                await host.InitializeHostAsync();
-
                 // Run and wait until the host is stopped
                 await host.RunAsync();
             }
